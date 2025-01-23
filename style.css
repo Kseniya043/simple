@@ -9,17 +9,21 @@
 
 @media (max-width: 1500px){
 	.container {
-		max-width: 1110px;
+		max-width: 1176px;
 	}
 }
 @media (max-width: 1200px) {
 	.container {
-		max-width: 690px;
+		max-width: 846px;
+		padding-left: 39px;
+    		padding-right: 39px;
 	}
 }
 @media (max-width: 767px){
 	.container {
-		max-width: 510px;
+		max-width: 576px;
+		padding-left: 33px;
+		padding-right: 33px;
 	}
 }
 @media (max-width: 500px) {
@@ -297,7 +301,15 @@
 	width: 100%;
 	height: 100%;
 }
+.main-advertising_img-big {
+	height: 100%;
+	width: 730px;
+}
 .main-advertising_img {
+	height: 100%;
+	width: 369px;
+}
+.main-advertising_img-sm {
 	height: 100%;
 }
 .main-advertising_img img {
@@ -306,7 +318,6 @@
 
 }
 .footer {
-	padding-bottom: 29px;
 	font-size: 20px;
 	background-color: #4C5866;
 }
@@ -365,6 +376,12 @@ img {
 		display: none;
 	}
 	.main-banner_img-sm {
+		display: none;
+	}
+	.main-advertising_img {
+		display: none;
+	}
+	.main-advertising_img-sm {
 		display: none;
 	}
 }
@@ -429,6 +446,33 @@ img {
 	}
 	.icon-info {
 		width: 330px;
+	}
+	.main-company__firm_img {
+		width: 150px;
+		height: 80px;
+	}
+	.icon-firm {
+		width: 100%;
+		height: 100%;
+	}
+	.main-advertising_title {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.main-advertising_subtitle {
+		padding-top: 20px;
+	}
+	.main-advertising_img-big {
+		display: none;
+	}
+	.main-advertising_img {
+		display: block;
+	}
+	.main-advertising_block_container {
+		padding-top: 60px;
+	}
+	.main-advertising_block {
+		gap: 30px;
 	}
 }
 @media (max-width: 767px) {
@@ -508,5 +552,35 @@ img {
 		font-size: 18px;
 		line-height: 27px;
 	}
+	.main-company__firm_img {
+		width: 240px;
+		height: 127px;
+	}
+	.icon-firm {
+		width: 100%;
+		height: 100%;
+	}
+	.main-advertising_title {
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.main-advertising_subtitle {
+		font-size: 16px;
+		line-height: 27px;
+		width: 100%;
+	}
+	.main-advertising_btn {
+		width: 196px;
+		height: 60px;	
+	}
+	.main-advertising_img {
+		display: none;
+	}
+	.main-advertising_img-sm {
+		display: block;
+		padding-top: 50px;
+	}
+	.main-advertising_block_container {
+		padding-top: 10px;
 }
 @media (max-width: 500px) {}
