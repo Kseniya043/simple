@@ -2,8 +2,13 @@
 <head>
 <meta charset="utf-8">
 <meta name=keywords" content="Личный сайт"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Simple</title>
 <link href="style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <header class="header">
@@ -13,32 +18,41 @@
 				<img src="Frame 85.svg" alt="Логотип"></a>
 		</div>
 		
-		<div class="header_info">
+		<div class="header_info-desktop">
 			<a href="#">Продукция</a>
 			<a href="#">Материалы</a>
 			<a href="#">О нас</a>
 			<a href="#">Контакты</a>
-<<<<<<< Updated upstream
-=======
 		</div>
-		<div class="burger">
-				<div class="line"></div>
-				<div class="line"></div>
-  				<div class="line"></div>
-			</div>
 		<div class="header_img">
->>>>>>> Stashed changes
 			<a href="#">
-				<img src="search.svg" alt="Поиск"></a>
+				<img class="icon" src="search.svg" alt="Поиск"></a>
 			<a href="#">
-				<img src="log_in.svg" alt="Вход"></a>
-				
+				<img class="icon" src="log_in.svg" alt="Вход"></a>
 		</div>
-<<<<<<< Updated upstream
-=======
-	<div class="header_nav container">
 	</div>
->>>>>>> Stashed changes
+		<div class="header_cap-bottom">
+			<div class="header_cap-mobile container">
+				<div class="burger">
+					<div class="line"></div>
+					<div class="line"></div>
+  					<div class="line"></div>
+				</div>
+				<div class="header_img-mobile">
+					<a href="#">
+						<img class="icon" src="search.svg" alt="Поиск"></a>
+					<a href="#">
+						<img class="icon" src="log_in.svg" alt="Вход"></a>
+				</div>
+			</div>
+		</div>
+	<div class="header_info">
+		<div class="header_info-mobile container">
+				<a href="#">Продукция</a>
+				<a href="#">Материалы</a>
+				<a href="#">О нас</a>
+				<a href="#">Контакты</a>
+		</div>
 	</div>
 </header>
 <main class="main">
@@ -55,19 +69,25 @@
 			</div>
 		</div>
 		<div class="main-banner__container">
+			<div class="main-banner_img-big">
+				<img src="banner-big.png" alt="Титульная картинка"/>
+			</div>
 			<div class="main-banner_img">
-				<img src="Layer 2 copy.png" alt="Титульная картинка"/>
+				<img src="banner.png" alt="Титульная картинка"/>
+			</div>
+			<div class="main-banner_img-sm">
+				<img src="banner-sm.png" alt="Титульная картинка"/>
 			</div>
 		</div>
 	</section>
 
-<section class="main-services_section section container">
-	<div class="main-services">
+<section class="main-services_section section">
+	<div class="main-services container">
 		<div class="main-services__study">
 			<div class="main-services__study__option">
 				<div class="main-services__study__option__block">
 					<div class="main-services__study__option__img">
-						<img src="Buissnes Cards v2 (85x55).png" alt="1 вариант"/>
+						<img class="icon-big" src="Buissnes Cards v2 (85x55).png" alt="1 вариант"/>
 					</div>	
 					<div class="main-services__study__option__text">
 						<div class="main-services__study__option__text__title">
@@ -80,7 +100,7 @@
 				</div>
 				<div class="main-services__study__option__block">
 					<div class="main-services__study__option__img">
-						<img src="Buissnes Cards v6 (85x55) 1.png" alt="2 вариант"/>
+						<img class="icon-big" src="Buissnes Cards v6 (85x55) 1.png" alt="2 вариант"/>
 					</div>
 					<div class="main-services__study__option__text">
 						<div class="main-services__study__option__text__title">
@@ -93,7 +113,7 @@
 				</div>
 				<div class="main-services__study__option__block">
 					<div class="main-services__study__option__img">
-						<img src="Buissnes Cards v5 (85x55) 1.png" alt="1 вариант"/>
+						<img class="icon-big" src="Buissnes Cards v5 (85x55) 1.png" alt="1 вариант"/>
 					</div>
 					<div class="main-services__study__option__text">
 						<div class="main-services__study__option__text__title">
@@ -129,7 +149,7 @@
 	<div class="main-showcase__block">
 		<div class="main-showcase__block__info">
 			<div class="main-showcase__block__info__img">
-				<img src="Frame 208.png" alt="Упаковка"/>
+				<img class="icon-info" src="Frame 208.png" alt="Упаковка"/>
 			</div>
 			<div class="main-showcase__block__info__text">
 				<div class="main-showcase__block__info__text_title">
@@ -145,12 +165,12 @@
 			<div class="main-showcase__block__info__btn">
 				<a href="#">Подробнее</a>
 				<a href="#">
-				<img src="Arrow 1.png" alt="Стрелка"></a>
+				<img class="icon-arrow" src="Arrow 1.png" alt="Стрелка"></a>
 			</div>
 		</div>
 		<div class="main-showcase__block__info">
 			<div class="main-showcase__block__info__img">
-				<img src="Frame 209.png" alt="Пакет"/>
+				<img class="icon-info" src="Frame 209.png" alt="Пакет"/>
 			</div>
 			<div class="main-showcase__block__info__text">
 				<div class="main-showcase__block__info__text_title">
@@ -166,12 +186,12 @@
 			<div class="main-showcase__block__info__btn">
 				<a href="#">Подробнее</a>
 				<a href="#">
-				<img src="Arrow 1.png" alt="Стрелка"></a>
+				<img class="icon-arrow" src="Arrow 1.png" alt="Стрелка"></a>
 			</div>
 		</div>
 		<div class="main-showcase__block__info">
 			<div class="main-showcase__block__info__img">
-				<img src="Frame 211.png" alt="Кейсы"/>
+				<img class="icon-info" src="Frame 211.png" alt="Кейсы"/>
 			</div>
 			<div class="main-showcase__block__info__text">
 				<div class="main-showcase__block__info__text_title">
@@ -187,12 +207,12 @@
 			<div class="main-showcase__block__info__btn">
 				<a href="#">Подробнее</a>
 				<a href="#">
-				<img src="Arrow 1.png" alt="Стрелка"></a>
+				<img class="icon-arrow" src="Arrow 1.png" alt="Стрелка"></a>
 			</div>
 		</div>
 		<div class="main-showcase__block__info">
 			<div class="main-showcase__block__info__img">
-				<img src="Frame 210.png" alt="Другие изделия"/>
+				<img class="icon-info" src="Frame 210.png" alt="Другие изделия"/>
 			</div>
 			<div class="main-showcase__block__info__text">
 				<div class="main-showcase__block__info__text_title">
@@ -208,7 +228,7 @@
 			<div class="main-showcase__block__info__btn">
 				<a href="#">Подробнее</a>
 				<a href="#">
-				<img class="arrow" src="Arrow 1.png" alt="Стрелка"></a>
+				<img class="icon-arrow" class="arrow" src="Arrow 1.png" alt="Стрелка"></a>
 			</div>
 		</div>
 	</div>
@@ -216,16 +236,16 @@
 <section class="main-company section">
 	<div class="main-company__block container">
 			<div class="main-company__firm_img">
-				<img src="Frame 226.png" alt="Hahnemuhle"/>
+				<img class="icon-firm" src="Frame 226.png" alt="Hahnemuhle"/>
 			</div>
 			<div class="main-company__firm_img">
-				<img src="Frame 225.png" alt="Canson"/>
+				<img class="icon-firm" src="Frame 225.png" alt="Canson"/>
 			</div>
 			<div class="main-company__firm_img">
-				<img src="Frame 228.png" alt="Royal Talens"/>
+				<img class="icon-firm" src="Frame 228.png" alt="Royal Talens"/>
 			</div>
 			<div class="main-company__firm_img">
-				<img src="Frame 227.png" alt="Fabriano"/>
+				<img class="icon-firm" src="Frame 227.png" alt="Fabriano"/>
 			</div>
 		
 	</div>
@@ -243,11 +263,15 @@
 				<button class="btn">Купить</button>
 			</div>
 		</div>
-		<div class="main-advertising_block_container">
-			<div class="main-advertising_img">
-				<img src="pic.png" alt="Скетчбук"/>
+			<div class="main-advertising_img-big">
+				<img src="sketchbook-big.png" alt="Скетчбук"/>
 			</div>
-		</div>
+			<div class="main-advertising_img">
+				<img src="sketchbook.png" alt="Скетчбук"/>
+			</div>
+			<div class="main-advertising_img-sm">
+				<img src="sketchbook-sm.png" alt="Скетчбук"/>
+			</div>
 	</div>
 </section>
 </main>
@@ -255,19 +279,22 @@
 	<div class="footer_cap container">
 		<div class="footer_logo">
 			<a href="#">
-				<img src="Frame 85 (1).svg" alt="Логотип"></a>
+				<img src="logo-footer.svg" alt="Логотип"></a>
 		</div>
 		<div class="footer_info">
 			<a href="#">
-				<img src="Frame.png" alt="Facebook"></a>
+				<img class="icon" src="Frame.png" alt="Facebook"></a>
 			<a href="#">
-				<img src="Frame (1).png" alt="Twitter"></a>
+				<img class="icon" src="Frame (1).png" alt="Twitter"></a>
 			<a href="#">
-				<img src="Frame (2).png" alt="instagram"></a>
+				<img class="icon" src="Frame (2).png" alt="instagram"></a>
 			<a href="#">
-				<img src="Frame (3).png" alt="YouTube"></a>
+				<img class="icon" src="Frame (3).png" alt="YouTube"></a>
 				
 		</div>
+	</div>
+	<div class="footer_bottom">
+		Simple ® 2021
 	</div>
 </footer>
 </body>

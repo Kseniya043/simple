@@ -40,9 +40,13 @@
 	padding-bottom: 29px;
 	padding-top: 29px;
 	font-size: 20px;
+<<<<<<< Updated upstream
 	
 	
 
+=======
+	border-bottom: 1px solid #DDDDDD;
+>>>>>>> Stashed changes
 }
 
 .header_cap {
@@ -52,22 +56,50 @@
 
 	
 }
+.header_cap-mobile {
+	display: none;
+}
 .header_logo {
+<<<<<<< Updated upstream
 	
+=======
+	height: 22px;
+	max-width: 140px;
+	width: 100%;
+	overflow: hidden;
+>>>>>>> Stashed changes
 }
 
-.header_info {
+.header_info-desktop {
 	display: flex;
+<<<<<<< Updated upstream
 	gap: 60px;
 	
+=======
+	gap: 40px;
+	justify-content: space-between;	
+>>>>>>> Stashed changes
 }
-.header_info a {
+.header_info {
+	display: none;
+}
+a {
 	text-decoration: none;
 	font-size: 20px;
 	color: grey;
 	
 }
+<<<<<<< Updated upstream
 
+=======
+.header_img {
+	display: flex;
+	gap: 30px;
+}
+.burger {
+	display: none;
+}
+>>>>>>> Stashed changes
 .main {
 	margin-top: 30px;
 }
@@ -80,7 +112,31 @@
 }
 
 .main-banner__container {
+<<<<<<< Updated upstream
 	
+=======
+	height: 100%;
+}
+.main-banner_img-big {
+	height: 100%;
+	max-width: 540px;
+	width: 100%;
+	overflow: hidden;
+}
+.main-banner_img {
+	height: 100%;
+	max-width: 270px;
+	width: 100%;
+	overflow: hidden;
+	display: none;
+}
+.main-banner_img-sm {
+	max-width: 195px;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	display: none;
+>>>>>>> Stashed changes
 }
 .main-banner_title {
 	font-size: 35px;
@@ -121,13 +177,19 @@
 .main-services__study__option {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	gap: 30px;
 }
 .main-services__study__option__block {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+<<<<<<< Updated upstream
 	
 	
 	
+=======
+	border-top: 1px solid #C0C0C0;
+	padding-top: 19px;
+>>>>>>> Stashed changes
 }
 .main-services__study__option__text {
 	color: grey;
@@ -141,7 +203,11 @@
 	display: grid;
 	grid-template-columns: 70% 30%;
 	width: 100%;
-
+}
+.main-services__img {
+	max-width: 730px;
+	width: 100%;
+	overflow: hidden;
 }
 .main-services__text {
 	color: grey;
@@ -175,7 +241,11 @@
 	font-size: 30px;
 	padding-top: 20px;
 }
-
+.main-showcase__block__info__img {
+	max-width: 255px;
+	width: 100%;
+	overflow: hidden;
+}
 .main-showcase__block__info__text_comment {
 	font-size: 14px;
 	padding-top: 8px;
@@ -199,6 +269,11 @@
 }
 .main-company {
 	background-color: #6e6e6e;
+}
+.main-company__firm_img {
+	max-width: 255px;
+	width: 100%;
+	overflow: hidden;
 }
 .main-company__block {
 	display: grid;
@@ -236,6 +311,7 @@
 	padding: 16px 40px;
 	border: 1px solid #10BAF0;
 	background-color: white;
+<<<<<<< Updated upstream
 	color: #10BAF0;
 }
 .main-advertising_img {
@@ -245,6 +321,31 @@
 	width: 100%;
 	height: 100%;
 
+=======
+	color: #7875FE;
+	width: 100%;
+	height: 100%;
+}
+.main-advertising_img-big {
+	max-width: 730px;
+	width: 100%;
+	max-width: 730px;
+	overflow: hidden;
+}
+.main-advertising_img {
+	height: 100%;
+	max-width: 369px;
+	width: 100%;
+	overflow: hidden;
+	display: none;
+}
+.main-advertising_img-sm {
+	height: 100%;
+	max-width: 449px;
+	width: 100%;
+	overflow: hidden;
+	display: none;
+>>>>>>> Stashed changes
 }
 .footer {
 	padding-bottom: 29px;
@@ -260,7 +361,13 @@
 	align-items: center;
 }
 .footer_logo {
+<<<<<<< Updated upstream
 
+=======
+	max-width: 140px;
+	width: 100%;
+	overflow: hidden;
+>>>>>>> Stashed changes
 }
 .footer_info {
 	display: flex;
@@ -274,8 +381,427 @@
 }
 img {
 	width: 100%;
+<<<<<<< Updated upstream
+=======
+	height: 100%;
+	object-fit: cover;
+}
+.icon {
+	max-width: 24px;
+	width: 100%;
+	overflow: hidden;
+	height: 24px;
+}
+.icon-big {
+	max-width: 160px;
+	height: 118px;
+	width: 100%;
+	overflow: hidden;
+}
+.icon-info {
+	max-width: 255px;
+	height: 180px;
+	width: 100%;
+	overflow: hidden;
+}
+.icon-arrow {
+	max-width: 20px;
+	height: 10px;
+	width: 100%;
+	overflow: hidden;
+}
+.icon-firm {
+	max-width: 255px;
+	height: 135px;
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid #C4C4C4;
+>>>>>>> Stashed changes
 }
 
 .arrow {
 	width: 20px;
+<<<<<<< Updated upstream
+=======
+}
+.footer_bottom {
+	background-color: #EBEBEB;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 15px;
+	height: 21px;
+}
+
+@media (max-width: 1500px) {
+}
+@media (max-width: 1200px) {
+	.header {
+		padding-bottom: 20px;
+	}
+	.header_cap {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.header_logo {
+		order: 1;
+	}
+	.header_info-desktop {
+		display: none;
+	}
+	.header_info {
+		display: block;
+		border-top: 1px solid #DDDDDD;
+		padding-top: 18px;
+	}
+	
+	.header_info-mobile {
+		display: flex;
+		gap: 20px;
+		justify-content: space-between;	
+	}
+	.header_img {
+		order: 2;
+		justify-self: end;
+	}
+	
+	.main-banner_title {
+		font-size: 50px;
+		line-height: 50px;
+		padding-top: 5px;
+		width: 390px;	
+	}
+	.main-banner_subtitle {
+		width: 390px;	
+	}
+	.main-showcase__block {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.main-services__text_title {
+		font-size: 30px;
+		line-height: 30px;
+		padding-top: 0;
+	}
+	.main-services__study__option__block {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.main-services__study__option__text {
+		padding-top: 0;
+	}
+	.main-services__info {
+		grid-template-columns: 1fr 1fr;
+		padding-top: 40px;
+	}
+	.main-services__img {
+		width: 330px;
+		height: 256px;
+	}
+	.icon-info {
+		width: 330px;
+	}
+	.main-company__firm_img {
+		width: 150px;
+		height: 80px;
+	}
+	.icon-firm {
+		width: 100%;
+		height: 100%;
+	}
+	.main-advertising {
+		padding-top: 60px;
+		padding-right: 0;
+	}
+	.main-advertising_title {
+		font-size: 30px;
+		line-height: 30px;
+		padding-top: 0;
+	}
+	.main-advertising_subtitle {
+		padding-top: 20px;
+	}
+	.main-advertising_block_container {
+	}
+	.main-advertising_block {
+		gap: 30px;
+	}
+	.main-advertising_img-big {
+		display: none;
+	}
+	.main-advertising_img {
+		display: block
+	}
+	.main-banner_img {
+		display: block;
+		justify-self: end;
+	}
+	.main-banner_img-big {
+		display: none;
+	}
+	
+}
+@media (max-width: 767px) {
+	.main-banner {
+		padding-top: 20px;
+		grid-template-columns: 55% 45%;
+		gap: 20px;
+	}
+	.main-banner_title {
+		font-size: 38px;
+		line-height: 38px;
+		padding-top: 40px;	
+		width: 286px;
+	}
+	.main-banner_subtitle {
+		font-size: 16px;
+		line-height: 24px;
+		width: 287px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.main-banner_img-sm {
+		display: block;
+		justify-self: end;
+	}
+	.main-banner_img {
+		display: none;
+	}
+	.main-banner_btn {
+		width: 196px;
+		height: 60px;
+	}
+	.main-services__info {
+		display: block;
+	}
+	.main-company__block {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.main-advertising_block {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+	.main-advertising {
+		height: 100%;
+	}
+	.main-services__study__option__text__title {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.main-services__study__option__text__subtitle {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.main-services__text_title {
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.main-services__text_subtitle {
+		font-size: 16px;
+		line-height: 27px;
+	}
+	.icon-big {
+		width: 150px;
+		height: 111px;
+	}
+	.icon-info {
+		width: 240px;
+	}
+	.main-showcase__block__info__text_title {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.main-showcase__block__info__text_comment {
+		padding-top: 4px;
+	}
+	.main-showcase__block__info__text_subtitle {
+		font-size: 18px;
+		line-height: 27px;
+	}
+	.main-company__firm_img {
+		width: 240px;
+		height: 127px;
+	}
+	.main-advertising {
+		padding-right: 33px;
+		padding-bottom: 60px;
+	}
+	.main-advertising_title {
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.main-advertising_subtitle {
+		font-size: 16px;
+		line-height: 27px;
+		width: 100%;
+	}
+	.main-advertising_btn {
+		width: 196px;
+		height: 60px;	
+	}
+	.main-advertising_img-sm {
+		order: 1;
+		display: block;
+	}
+	.main-advertising_img {
+		display: none;
+	}
+	.main-advertising_block_container {
+		order: 2;
+		padding-top: 0;
+	}
+}
+@media (max-width: 500px) {
+	.main {
+		margin-top: 0;
+	}
+	.header {
+		padding-bottom: 0;
+	}
+	.header_cap {
+		grid-template-columns: 1fr;
+		align-items: center;
+	}
+	.header_info {
+		display: none;
+	}
+	.header_logo {
+		margin-left: auto;
+		margin-right: auto;
+		grid-column-start: -3;
+        	grid-column-end: -1;
+        	order: 1;
+	}
+	.header_img {
+		display: none;
+	}
+	.header_img-mobile {
+	}
+	.header_cap-bottom {
+		border-top: 1px solid #DDDDDD;
+		padding-top: 15px;
+	}
+	.header_cap-mobile {
+		display: flex;
+		order: 2;
+		gap: 30px;
+		grid-column-start: 3;
+        	grid-column-end: 1;
+		justify-content: space-between;
+	}
+	.main-banner {
+		padding-top: 0;
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
+
+	.main-banner__container {
+		padding-bottom: 24.5px;
+	}
+
+	.main-banner_title {
+		padding-top: 49px;
+		font-size: 30px;
+		line-height: 30px;
+		width: 221px;
+	}
+
+	.main-banner_subtitle {
+		padding-top: 15px;
+		font-size: 14px;
+		line-height: 21px;
+		width: 289px;
+	}
+
+	.main-banner_btn {
+		width: 144px;
+		height: 50px;
+		font-size: 18px;
+		line-height: 21px;
+	}
+
+	.main-services__study__option {
+		grid-template-columns: 1fr;
+	}
+
+	.main-services__study__option__block {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+	}
+
+	.icon-big {
+		width: 130px;
+		height: 96px;
+	}
+
+	.main-services__info {
+		padding-top: 60px;
+	}
+
+	.main-services__img {
+		width: 290px;
+		height: 223px;
+	}
+	.main-company__block {
+		display: flex;
+		overflow: auto;
+	}
+	.main-company__firm_img {
+		width: 150px;
+		height: 80px;
+		min-width: 50%;
+	}
+	.icon-info {
+		width: 290px;
+	}
+	.main-showcase__block {
+		grid-template-columns: 1fr;
+		gap: 60px;
+	}
+	.main-advertising_title {
+		padding-top: 0;
+	}
+	.footer_cap {
+		display: block;
+		height: 127px;
+	}
+	.footer_info {
+		gap: 30px;
+		padding-top: 20px;
+		padding-left: 55px;
+		border-top: 1px solid #DDDDDD;
+	}
+	.footer_logo {
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 20px;
+		padding-bottom: 19.5px;
+	}
+	.footer_bottom {
+		margin-top: 20px;
+	}
+	.burger {
+		width: 20px;
+		height: 16px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+	.line {
+		width: 100%;
+		height: 2px;
+		background-color: #4C5866;
+		border-radius: 100px;
+	}
+	.main-banner_img-sm {
+		display: none;
+	}
+	img {
+		object-fit: contain;
+	}
+>>>>>>> Stashed changes
 }
