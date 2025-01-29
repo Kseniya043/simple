@@ -1,52 +1,49 @@
 .container {
-  max-width: 1390px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-@media (min-width: 575.98px){
-  .container {
-    max-width: 540px;
-    margin: auto;
-    padding: 0;
-  }
+	max-width: 1440px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 33px;
+	padding-right: 33px;
 }
 
-@media (min-width: 767.98px){
-  .container {
-    max-width: 680px;
-  }
+@media (max-width: 1500px){
+	.container {
+		max-width: 1176px;
+	}
 }
-
-@media (min-width: 991.98px) {
-  .container {
-    max-width: 960px;
-  }
+@media (max-width: 1200px) {
+	.container {
+		/*max-width: 846px;*/
+		max-width: 100%;
+		padding-left: 39px;
+		padding-right: 39px;
+	}
 }
-
-@media (min-width: 1199.98px){
-  .container {
-    max-width: 1110px;
-  }
+@media (max-width: 767px){
+	.container {
+		padding-left: 33px;
+		padding-right: 33px;
+	}
 }
-
+@media (max-width: 500px) {
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", serif;
+	font-weight: 400;
 }
 .header {
 	padding-bottom: 29px;
 	padding-top: 29px;
 	font-size: 20px;
-<<<<<<< Updated upstream
-	
-	
-
-=======
 	border-bottom: 1px solid #DDDDDD;
->>>>>>> Stashed changes
 }
 
 .header_cap {
@@ -54,31 +51,22 @@
 	justify-content: space-between;
 	gap: 20px;
 
-	
+
 }
 .header_cap-mobile {
 	display: none;
 }
 .header_logo {
-<<<<<<< Updated upstream
-	
-=======
 	height: 22px;
 	max-width: 140px;
 	width: 100%;
 	overflow: hidden;
->>>>>>> Stashed changes
 }
 
 .header_info-desktop {
 	display: flex;
-<<<<<<< Updated upstream
-	gap: 60px;
-	
-=======
 	gap: 40px;
-	justify-content: space-between;	
->>>>>>> Stashed changes
+	justify-content: space-between;
 }
 .header_info {
 	display: none;
@@ -86,12 +74,11 @@
 a {
 	text-decoration: none;
 	font-size: 20px;
-	color: grey;
-	
-}
-<<<<<<< Updated upstream
+	color: #4C5866;
+	font-weight: 400;
+	line-height: 23.44px;
 
-=======
+}
 .header_img {
 	display: flex;
 	gap: 30px;
@@ -99,7 +86,6 @@ a {
 .burger {
 	display: none;
 }
->>>>>>> Stashed changes
 .main {
 	margin-top: 30px;
 }
@@ -108,13 +94,10 @@ a {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	color: grey;
-	
+	padding-top: 60px;
 }
 
 .main-banner__container {
-<<<<<<< Updated upstream
-	
-=======
 	height: 100%;
 }
 .main-banner_img-big {
@@ -136,44 +119,52 @@ a {
 	width: 100%;
 	overflow: hidden;
 	display: none;
->>>>>>> Stashed changes
 }
 .main-banner_title {
-	font-size: 35px;
-	padding-top: 100px;
-	width: 250px;
-
-
+	font-size: 60px;
+	padding-top: 70px;
+	width: 444px;
+	color: #4C5866;
+	font-weight: 400;
+	line-height: 60px;
 }
 .main-banner_subtitle {
 	font-size: 18px;
 	padding-top: 30px;
-	width: 400px;
-	line-height: 30px;
-
+	width: 444px;
+	color: #85859B;
+	padding-bottom: 30px;
+	font-weight: 400;
+	line-height: 27px;
 }
 .main-banner_btn {
 	font-size: 20px;
-	padding-top: 30px;
-	
+	width: 255px;
+	height: 70px;
+	font-weight: 400;
+	line-height: 23.44px;
 }
 .main-banner_btn button {
 	padding: 16px 40px;
-	border: 1px solid #10BAF0;
+	border: 1px solid #7875FE;
 	background-color: white;
-	color: #10BAF0;
+	color: #7875FE;
+	height: 100%;
+	width: 100%;
 }
 
 
 .section {
 	padding-top: 90px;
 	padding-bottom: 100px;
-	
+
 }
 .section-bottom {
 
 }
-
+.main-services {
+	background-color: #EBEBEB;
+}
 .main-services__study__option {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -182,21 +173,24 @@ a {
 .main-services__study__option__block {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-<<<<<<< Updated upstream
-	
-	
-	
-=======
 	border-top: 1px solid #C0C0C0;
 	padding-top: 19px;
->>>>>>> Stashed changes
 }
 .main-services__study__option__text {
 	color: grey;
-	font-size: 18px;
 	padding-top: 30px;
-	
-	
+}
+.main-services__study__option__text__title {
+	color: #666666;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+}
+.main-services__study__option__text__subtitle {
+	color: #85859B;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
 }
 .main-services__info  {
 	padding-top: 90px;
@@ -212,18 +206,23 @@ a {
 .main-services__text {
 	color: grey;
 	line-height: 30.6px;
-	
+
 }
 .main-services__text_title {
 	font-size: 40px;
 	padding-top: 59px;
+	color: #666666;
+	font-weight: 400;
+	line-height: 40px;
 }
 
 
 .main-services__text_subtitle {
 	font-size: 18px;
 	padding-top: 20px;
-	
+	color: #85859B;
+	font-weight: 400;
+	line-height: 30.6px;
 }
 .main-showcase__block {
 	display: grid;
@@ -240,6 +239,9 @@ a {
 .main-showcase__block__info__text_title {
 	font-size: 30px;
 	padding-top: 20px;
+	color: #666666;
+	font-weight: 400;
+	line-height: 35px;
 }
 .main-showcase__block__info__img {
 	max-width: 255px;
@@ -249,26 +251,35 @@ a {
 .main-showcase__block__info__text_comment {
 	font-size: 14px;
 	padding-top: 8px;
+	color: #B5B5BD;
+	font-weight: 400;
+	line-height: 16px;
 }
 
 .main-showcase__block__info__text_subtitle {
 	font-size: 18px;
 	padding-top: 8px;
 	line-height: 30.6px;
+	color: #85859B;
+	font-weight: 400;
 }
 .main-showcase__block__info__btn {
 	padding-top: 20px;
 }
 .main-showcase__block__info__btn a {
 	text-decoration: none;
-		
+	color: #7875FE;
+	font-weight: 400;
+	line-height: 23px;
+	font-size: 20px;
+
 }
 
 .main-services_section {
-
+	background-color: #EBEBEB;
 }
 .main-company {
-	background-color: #6e6e6e;
+	background-color: #EBEBEB;
 }
 .main-company__firm_img {
 	max-width: 255px;
@@ -280,19 +291,26 @@ a {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 30px;
 }
-
+.main-advertising {
+	padding-top: 90px;
+}
 .main-advertising_block {
 	display: grid;
-	grid-template-columns: 35% 65%;
+	grid-template-columns: 1fr max-content;
 	color: grey;
+	row-gap: 10px;
+	column-gap: 30px;
 }
 
 .main-advertising_block_container {
-
 }
 .main-advertising_title {
-	font-size: 35px;
+	font-size: 40px;
 	width: 250px;
+	color: #666666;
+	padding-top: 24px;
+	font-weight: 400;
+	line-height: 40px;
 }
 
 .main-advertising_subtitle {
@@ -300,28 +318,23 @@ a {
 	padding-top: 30px;
 	width: 300px;
 	line-height: 30px;
+	color: #85859B;
+	padding-bottom: 30px;
+	font-weight: 400;
 }
 
 .main-advertising_btn {
 	font-size: 20px;
-	padding-top: 30px;
+	width: 255px;
+	height: 70px;
+	font-weight: 400;
+	line-height: 23px;
 }
 
 .main-advertising_btn button {
 	padding: 16px 40px;
-	border: 1px solid #10BAF0;
+	border: 1px solid #7875FE;
 	background-color: white;
-<<<<<<< Updated upstream
-	color: #10BAF0;
-}
-.main-advertising_img {
-
-}
-.main-advertising_img img {
-	width: 100%;
-	height: 100%;
-
-=======
 	color: #7875FE;
 	width: 100%;
 	height: 100%;
@@ -345,12 +358,10 @@ a {
 	width: 100%;
 	overflow: hidden;
 	display: none;
->>>>>>> Stashed changes
 }
 .footer {
-	padding-bottom: 29px;
 	font-size: 20px;
-	background-color: grey;
+	background-color: #4C5866;
 }
 
 .footer_cap {
@@ -359,30 +370,25 @@ a {
 	gap: 20px;
 	height: 80px;
 	align-items: center;
+
 }
 .footer_logo {
-<<<<<<< Updated upstream
-
-=======
 	max-width: 140px;
 	width: 100%;
 	overflow: hidden;
->>>>>>> Stashed changes
 }
 .footer_info {
 	display: flex;
 	gap: 60px;
-	
+
 }
 .footer_info a {
 	text-decoration: none;
 	font-size: 20px;
-	color: grey;	
+	color: grey;
 }
 img {
 	width: 100%;
-<<<<<<< Updated upstream
-=======
 	height: 100%;
 	object-fit: cover;
 }
@@ -416,13 +422,9 @@ img {
 	width: 100%;
 	overflow: hidden;
 	border: 1px solid #C4C4C4;
->>>>>>> Stashed changes
 }
-
 .arrow {
 	width: 20px;
-<<<<<<< Updated upstream
-=======
 }
 .footer_bottom {
 	background-color: #EBEBEB;
@@ -454,25 +456,25 @@ img {
 		border-top: 1px solid #DDDDDD;
 		padding-top: 18px;
 	}
-	
+
 	.header_info-mobile {
 		display: flex;
 		gap: 20px;
-		justify-content: space-between;	
+		justify-content: space-between;
 	}
 	.header_img {
 		order: 2;
 		justify-self: end;
 	}
-	
+
 	.main-banner_title {
 		font-size: 50px;
 		line-height: 50px;
 		padding-top: 5px;
-		width: 390px;	
+		width: 390px;
 	}
 	.main-banner_subtitle {
-		width: 390px;	
+		width: 390px;
 	}
 	.main-showcase__block {
 		display: grid;
@@ -539,7 +541,7 @@ img {
 	.main-banner_img-big {
 		display: none;
 	}
-	
+
 }
 @media (max-width: 767px) {
 	.main-banner {
@@ -550,7 +552,7 @@ img {
 	.main-banner_title {
 		font-size: 38px;
 		line-height: 38px;
-		padding-top: 40px;	
+		padding-top: 40px;
 		width: 286px;
 	}
 	.main-banner_subtitle {
@@ -639,7 +641,7 @@ img {
 	}
 	.main-advertising_btn {
 		width: 196px;
-		height: 60px;	
+		height: 60px;
 	}
 	.main-advertising_img-sm {
 		order: 1;
@@ -671,8 +673,8 @@ img {
 		margin-left: auto;
 		margin-right: auto;
 		grid-column-start: -3;
-        	grid-column-end: -1;
-        	order: 1;
+		grid-column-end: -1;
+		order: 1;
 	}
 	.header_img {
 		display: none;
@@ -688,7 +690,7 @@ img {
 		order: 2;
 		gap: 30px;
 		grid-column-start: 3;
-        	grid-column-end: 1;
+		grid-column-end: 1;
 		justify-content: space-between;
 	}
 	.main-banner {
@@ -790,7 +792,7 @@ img {
 		flex-direction: column;
 		justify-content: space-between;
 	}
-	
+
 	.line {
 		width: 100%;
 		height: 2px;
@@ -803,5 +805,4 @@ img {
 	img {
 		object-fit: contain;
 	}
->>>>>>> Stashed changes
 }
