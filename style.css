@@ -1,3 +1,7 @@
+a {
+	font-size: 20px;
+	line-height: 23.44px;	
+}
 .header {
 	padding-bottom: 29px;
 	padding-top: 29px;
@@ -29,6 +33,9 @@
 .header_img {
 	display: flex;
 	gap: var(--gap);
+}
+.header_cap-bottom-burger {
+	background-color: #EBEBEB;
 }
 .burger {
 	display: none;
@@ -560,9 +567,13 @@
 	.header_cap {
 		grid-template-columns: 1fr;
 		align-items: center;
+		border-bottom: 1px solid #DDDDDD;
 	}
-	.header_info {
-		display: none;
+
+	.header_info-mobile {
+		display: flex;
+		flex-flow: column;
+		gap: 50px;
 	}
 	.header_logo {
 		margin-left: auto;
@@ -576,17 +587,11 @@
 	}
 	.header_img-mobile {
 	}
-	.header_cap-bottom {
-		border-top: 1px solid #DDDDDD;
-		padding-top: 15px;
-	}
 	.header_cap-mobile {
 		display: flex;
-		order: 2;
 		gap: 30px;
-		grid-column-start: 3;
-        	grid-column-end: 1;
 		justify-content: space-between;
+		padding-top: 15px;
 	}
 	.main-banner {
 		padding-top: 0;
@@ -680,14 +685,6 @@
 	.footer_bottom {
 		margin-top: 20px;
 	}
-	.burger {
-		width: 20px;
-		height: 16px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-	
 	.line {
 		width: 100%;
 		height: 2px;
@@ -699,5 +696,55 @@
 	}
 	img {
 		object-fit: contain;
+	}
+	a {
+		font-size: 18px;
+		line-height: 21px;
+	}
+	.header_info {
+		display: none;
+		padding-top: 22px;
+		background-color: #EBEBEB;
+		padding-bottom: 88px;
+		border-top: none;
+	}
+	.aditional-header_cap-bottom .header_img-mobile {
+		display: none;
+	}
+	.aditional-header_cap-bottom {
+		background-color: #EBEBEB;
+		width: 29px;
+		padding-top: 15px;
+	}
+	.aditional-header_cap-menu {
+		display: block;
+	}
+	.burger {
+		width: 20px;
+		display: block;	
+	}
+	.burger:before,
+	.burger:after,
+	.burger div {
+		background: #4C5866;
+		content: "";
+		display: block;
+		height: 3px;
+		border-radius: 3px;
+		margin: 3px 0;
+		transition: 0.5s;
+	}
+	.burger-cross {
+
+	}
+	
+	.burger-cross:active:before {
+		transform: translateY(12px) rotate(135deg);
+	}
+	.burger-cross:active:after {
+		transform: translateY(-12px) rotate(-135deg);
+	}
+	.burger-cross:active div {
+		transform: scale(0);
 	}
 }
