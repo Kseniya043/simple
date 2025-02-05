@@ -1,57 +1,13 @@
-.container {
-	max-width: 1440px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 33px;
-	padding-right: 33px;
-}
-
-@media (max-width: 1500px){
-	.container {
-		max-width: 1176px;
-	}
-}
-@media (max-width: 1200px) {
-	.container {
-		/*max-width: 846px;*/
-		max-width: 100%;
-		padding-left: 39px;
-		padding-right: 39px;
-	}
-}
-@media (max-width: 767px){
-	.container {
-		padding-left: 33px;
-		padding-right: 33px;
-	}
-}
-@media (max-width: 500px) {
-	.container {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-}
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Roboto", serif;
-	font-weight: 400;
-}
 .header {
 	padding-bottom: 29px;
 	padding-top: 29px;
 	font-size: 20px;
 	border-bottom: 1px solid #DDDDDD;
 }
-
 .header_cap {
 	display: flex;
 	justify-content: space-between;
-	gap: 20px;
-
-
+	gap: 20px;	
 }
 .header_cap-mobile {
 	display: none;
@@ -62,26 +18,17 @@
 	width: 100%;
 	overflow: hidden;
 }
-
 .header_info-desktop {
 	display: flex;
 	gap: 40px;
-	justify-content: space-between;
+	justify-content: space-between;	
 }
 .header_info {
 	display: none;
 }
-a {
-	text-decoration: none;
-	font-size: 20px;
-	color: #4C5866;
-	font-weight: 400;
-	line-height: 23.44px;
-
-}
 .header_img {
 	display: flex;
-	gap: 30px;
+	gap: var(--gap);
 }
 .burger {
 	display: none;
@@ -96,7 +43,6 @@ a {
 	color: grey;
 	padding-top: 60px;
 }
-
 .main-banner__container {
 	height: 100%;
 }
@@ -125,23 +71,23 @@ a {
 	padding-top: 70px;
 	width: 444px;
 	color: #4C5866;
-	font-weight: 400;
+	font-weight:var(--thickness);
 	line-height: 60px;
 }
 .main-banner_subtitle {
-	font-size: 18px;
+	font-size: var(--subtitle);
 	padding-top: 30px;
 	width: 444px;
-	color: #85859B;
+	color: var(--color);
 	padding-bottom: 30px;
-	font-weight: 400;
+	font-weight: var(--thickness);
 	line-height: 27px;
 }
 .main-banner_btn {
 	font-size: 20px;
 	width: 255px;
 	height: 70px;
-	font-weight: 400;
+	font-weight: var(--thickness);
 	line-height: 23.44px;
 }
 .main-banner_btn button {
@@ -152,15 +98,9 @@ a {
 	height: 100%;
 	width: 100%;
 }
-
-
 .section {
 	padding-top: 90px;
-	padding-bottom: 100px;
-
-}
-.section-bottom {
-
+	padding-bottom: 100px;	
 }
 .main-services {
 	background-color: #EBEBEB;
@@ -168,7 +108,7 @@ a {
 .main-services__study__option {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	gap: 30px;
+	gap: var(--gap);
 }
 .main-services__study__option__block {
 	display: grid;
@@ -181,15 +121,15 @@ a {
 	padding-top: 30px;
 }
 .main-services__study__option__text__title {
-	color: #666666;
+	color: var(--color-dark);
 	font-weight: 500;
-	font-size: 18px;
+	font-size: var(--subtitle);
 	line-height: 27px;
 }
 .main-services__study__option__text__subtitle {
-	color: #85859B;
-	font-weight: 400;
-	font-size: 18px;
+	color: var(--color);
+	font-weight: var(--thickness);
+	font-size: var(--subtitle);
 	line-height: 27px;
 }
 .main-services__info  {
@@ -205,42 +145,35 @@ a {
 }
 .main-services__text {
 	color: grey;
-	line-height: 30.6px;
-
+	line-height: 30.6px;	
 }
 .main-services__text_title {
 	font-size: 40px;
 	padding-top: 59px;
-	color: #666666;
-	font-weight: 400;
+	color: var(--color-dark);
+	font-weight: var(--thickness);
 	line-height: 40px;
 }
-
-
 .main-services__text_subtitle {
-	font-size: 18px;
+	font-size: var(--subtitle);
 	padding-top: 20px;
-	color: #85859B;
-	font-weight: 400;
+	color: var(--color);
+	font-weight: var(--thickness);
 	line-height: 30.6px;
 }
 .main-showcase__block {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	gap: 30px;
+	gap: var(--gap);
 }
-
-
 .main-showcase__block__info {
 	color: grey;
-
 }
-
 .main-showcase__block__info__text_title {
 	font-size: 30px;
 	padding-top: 20px;
-	color: #666666;
-	font-weight: 400;
+	color: var(--color-dark);
+	font-weight: var(--thickness);
 	line-height: 35px;
 }
 .main-showcase__block__info__img {
@@ -252,16 +185,16 @@ a {
 	font-size: 14px;
 	padding-top: 8px;
 	color: #B5B5BD;
-	font-weight: 400;
+	font-weight: var(--thickness);
 	line-height: 16px;
 }
 
 .main-showcase__block__info__text_subtitle {
-	font-size: 18px;
+	font-size: var(--subtitle);
 	padding-top: 8px;
 	line-height: 30.6px;
-	color: #85859B;
-	font-weight: 400;
+	color: var(--color);
+	font-weight: var(--thickness);
 }
 .main-showcase__block__info__btn {
 	padding-top: 20px;
@@ -269,12 +202,10 @@ a {
 .main-showcase__block__info__btn a {
 	text-decoration: none;
 	color: #7875FE;
-	font-weight: 400;
+	font-weight: var(--thickness);
 	line-height: 23px;
-	font-size: 20px;
-
+	font-size: 20px;		
 }
-
 .main-services_section {
 	background-color: #EBEBEB;
 }
@@ -289,7 +220,7 @@ a {
 .main-company__block {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	gap: 30px;
+	gap: var(--gap);
 }
 .main-advertising {
 	padding-top: 90px;
@@ -307,30 +238,27 @@ a {
 .main-advertising_title {
 	font-size: 40px;
 	width: 250px;
-	color: #666666;
+	color: var(--color-dark);
 	padding-top: 24px;
-	font-weight: 400;
+	font-weight: var(--thickness);
 	line-height: 40px;
 }
-
 .main-advertising_subtitle {
-	font-size: 18px;
+	font-size: var(--subtitle);
 	padding-top: 30px;
 	width: 300px;
 	line-height: 30px;
-	color: #85859B;
+	color: var(--color);
 	padding-bottom: 30px;
-	font-weight: 400;
+	font-weight: var(--thickness);
 }
-
 .main-advertising_btn {
 	font-size: 20px;
 	width: 255px;
 	height: 70px;
-	font-weight: 400;
+	font-weight: var(--thickness);
 	line-height: 23px;
 }
-
 .main-advertising_btn button {
 	padding: 16px 40px;
 	border: 1px solid #7875FE;
@@ -363,14 +291,12 @@ a {
 	font-size: 20px;
 	background-color: #4C5866;
 }
-
 .footer_cap {
 	display: flex;
 	justify-content: space-between;
 	gap: 20px;
 	height: 80px;
 	align-items: center;
-
 }
 .footer_logo {
 	max-width: 140px;
@@ -379,49 +305,12 @@ a {
 }
 .footer_info {
 	display: flex;
-	gap: 60px;
-
+	gap: 60px;	
 }
 .footer_info a {
 	text-decoration: none;
 	font-size: 20px;
-	color: grey;
-}
-img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-.icon {
-	max-width: 24px;
-	width: 100%;
-	overflow: hidden;
-	height: 24px;
-}
-.icon-big {
-	max-width: 160px;
-	height: 118px;
-	width: 100%;
-	overflow: hidden;
-}
-.icon-info {
-	max-width: 255px;
-	height: 180px;
-	width: 100%;
-	overflow: hidden;
-}
-.icon-arrow {
-	max-width: 20px;
-	height: 10px;
-	width: 100%;
-	overflow: hidden;
-}
-.icon-firm {
-	max-width: 255px;
-	height: 135px;
-	width: 100%;
-	overflow: hidden;
-	border: 1px solid #C4C4C4;
+	color: grey;	
 }
 .arrow {
 	width: 20px;
@@ -430,11 +319,17 @@ img {
 	background-color: #EBEBEB;
 	text-align: center;
 	font-size: 13px;
-	font-weight: 400;
+	font-weight: var(--thickness);
 	line-height: 15px;
 	height: 21px;
 }
-
+.icon-firm {
+	max-width: 255px;
+	height: 135px;
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid #C4C4C4;
+}
 @media (max-width: 1500px) {
 }
 @media (max-width: 1200px) {
@@ -456,25 +351,25 @@ img {
 		border-top: 1px solid #DDDDDD;
 		padding-top: 18px;
 	}
-
+	
 	.header_info-mobile {
 		display: flex;
 		gap: 20px;
-		justify-content: space-between;
+		justify-content: space-between;	
 	}
 	.header_img {
 		order: 2;
 		justify-self: end;
 	}
-
+	
 	.main-banner_title {
 		font-size: 50px;
 		line-height: 50px;
 		padding-top: 5px;
-		width: 390px;
+		width: 390px;	
 	}
 	.main-banner_subtitle {
-		width: 390px;
+		width: 390px;	
 	}
 	.main-showcase__block {
 		display: grid;
@@ -541,7 +436,7 @@ img {
 	.main-banner_img-big {
 		display: none;
 	}
-
+	
 }
 @media (max-width: 767px) {
 	.main-banner {
@@ -552,7 +447,7 @@ img {
 	.main-banner_title {
 		font-size: 38px;
 		line-height: 38px;
-		padding-top: 40px;
+		padding-top: 40px;	
 		width: 286px;
 	}
 	.main-banner_subtitle {
@@ -641,7 +536,7 @@ img {
 	}
 	.main-advertising_btn {
 		width: 196px;
-		height: 60px;
+		height: 60px;	
 	}
 	.main-advertising_img-sm {
 		order: 1;
@@ -673,8 +568,8 @@ img {
 		margin-left: auto;
 		margin-right: auto;
 		grid-column-start: -3;
-		grid-column-end: -1;
-		order: 1;
+        	grid-column-end: -1;
+        	order: 1;
 	}
 	.header_img {
 		display: none;
@@ -690,7 +585,7 @@ img {
 		order: 2;
 		gap: 30px;
 		grid-column-start: 3;
-		grid-column-end: 1;
+        	grid-column-end: 1;
 		justify-content: space-between;
 	}
 	.main-banner {
@@ -792,7 +687,7 @@ img {
 		flex-direction: column;
 		justify-content: space-between;
 	}
-
+	
 	.line {
 		width: 100%;
 		height: 2px;
