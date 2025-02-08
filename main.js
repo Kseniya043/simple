@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
             elementWithClassMenu.classList.add("aditional-header_cap-menu")
         }
 
-	if (elementWithClassCross.classList.contains("burger-cross")) {
-      	elementWithClassCross.classList.remove("burger-cross");
+	if (elementWithClassCross.classList.contains("active")) {
+      	elementWithClassCross.classList.remove("active");
         } else {
-            elementWithClassCross.classList.add("burger-cross")
+            elementWithClassCross.classList.add("active")
         }
 	}
 	
