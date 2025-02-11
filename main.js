@@ -1,29 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
-	let burger = document.getElementById('show-burger')
-	let elementWithClassBurger = document.querySelector('.header_cap-mobile');
-	let elementWithClassMenu = document.querySelector('.header_info');
-	let elementWithClassCross = document.querySelector('.burger');
-	burger.onclick = function () {
-	if (elementWithClassBurger.classList.contains("aditional-header_cap-bottom")) {
-		elementWithClassBurger.classList.remove("aditional-header_cap-bottom");
-	} else {
-		elementWithClassBurger.classList.add("aditional-header_cap-bottom")
-	}
-
-	if (elementWithClassMenu.classList.contains("aditional-header_cap-menu")) {
-      	elementWithClassMenu.classList.remove("aditional-header_cap-menu");
+    let burger = document.getElementById('show-burger')
+    let elementButtonHeader = document.querySelector('.header_cap-mobile');
+    let elementMobileMenu = document.querySelector('.header_menu');
+    burger.onclick = function () {
+        if (elementButtonHeader.classList.contains("aditional-header_cap-bottom")) {
+            elementButtonHeader.classList.remove("aditional-header_cap-bottom");
         } else {
-            elementWithClassMenu.classList.add("aditional-header_cap-menu")
+            elementButtonHeader.classList.add("aditional-header_cap-bottom")
         }
 
-	if (elementWithClassCross.classList.contains("active")) {
-      	elementWithClassCross.classList.remove("active");
+        if (elementMobileMenu.classList.contains("aditional-header_cap-menu")) {
+			elementMobileMenu.classList.remove("aditional-header_cap-menu");
         } else {
-            elementWithClassCross.classList.add("active")
+			elementMobileMenu.classList.add("aditional-header_cap-menu")
         }
-	}
-	
-	
+
+        if (burger.classList.contains("active")) {
+            burger.classList.remove("active");
+        } else {
+            burger.classList.add("active")
+        }
+    }
+
 
 })
 	
