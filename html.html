@@ -10,9 +10,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
-
+  <script src="main.js"></script>
 </head>
 <body>
+<div class="modal-off">
+  <h2>Войдите в свой аккаунт</h2>
+  <form class="form">
+    <div class="form__row">
+      <input type="text" class="info" placeholder="Почта" />
+      <input type="text" class="info" placeholder="Пароль" />
+    </div>
+  </form>
+  <button id="show-modal" class="btn-modal">
+    Авторизоваться
+  </button>
+</div>
 <header class="header">
   <div class="header_cap container">
     <div class="header_logo">
@@ -20,7 +32,7 @@
         <img src="Frame 85.svg" alt="Логотип"></a>
     </div>
 
-    <div class="header_info-desktop">
+    <div class="header_menu-desktop">
       <a href="#">Продукция</a>
       <a href="#">Материалы</a>
       <a href="#">О нас</a>
@@ -35,10 +47,8 @@
   </div>
   <div class="header_cap-bottom">
     <div class="header_cap-mobile container">
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+      <div id="show-burger" class="burger">
+        <div></div>
       </div>
       <div class="header_img-mobile">
         <a href="#">
@@ -48,8 +58,8 @@
       </div>
     </div>
   </div>
-  <div class="header_info">
-    <div class="header_info-mobile container">
+  <div class="header_menu">
+    <div class="header_menu-mobile container">
       <a href="#">Продукция</a>
       <a href="#">Материалы</a>
       <a href="#">О нас</a>
