@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
             burger.classList.add("active")
         }
     }
-    let myModal = document.getElementById('show-modal');
+    let myModal = document.getElementById('login');
     let elementWithClassModal = document.querySelector('.modal-off');
     myModal.onclick = function () {
         if (elementWithClassModal.classList.contains("modal")) {
